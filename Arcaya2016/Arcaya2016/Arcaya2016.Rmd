@@ -1,0 +1,151 @@
+---
+title: |
+  Research on neighborhood effects on health in the United States: A
+  systematic review of study characteristics
+subtitle: \textit{Arcaya et al (2016)}
+author: Andy Kampfschulte
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+fontsize: 10pt
+make169: TRUE
+output: 
+  SSCItemplates::beamer:
+    keep_tex: TRUE
+    latex_engine: pdflatex 
+    fig_width: 4
+    fig_height: 4
+    slide_level: 3 # I prefer this, but I won't force it on you.
+    fonttheme: serif
+    includes:
+      in_header: cols.tex
+header-includes:
+  - \usepackage{forest}
+  - \usepackage{amsmath}
+  - \usepackage{booktabs}
+  - \usepackage{multicol}
+  - \usepackage{makecell}
+  - \usepackage{bm}
+  - \usepackage{upgreek}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE,
+                      echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+
+pacs <- c("ggplot2",
+          "dplyr",
+          "sf",
+          "sp",
+          "spatstat",
+          "maptools",
+          "tigris",
+          "stargazer",
+          "kableExtra")
+
+invisible(lapply(pacs, library, character.only = TRUE))
+
+```
+
+
+# Central Themes
+## Primary Objectives
+
+- *Provide new data on the characteristics of a broad set of neighborhoods and health studies over the past 20 years as a resource to better un-derstand the state of the “neighborhood effects on health” science*
+- *Reflect on previous agendas to advance neighborhoods and health research, highlighting goals that have not yet been met by the existing literature*
+
+# Methods
+
+![](C:/Users/andyk/Documents/Projects/SSCI601/Arcaya2016/fig1.png){height=80%}
+
+
+## Central Themes
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.6\textwidth}"}
+
+- Cross-Sectional studies are abundant
+  - Other designs are much needed to address confounding
+- Census Geographies abound
+  - Are study hypotheses truly *a-priori*
+  - Convenience sampling
+- GIS-related topics are often overlooked, as other commonplace statistics
+   - MAUP
+   - 3+ Level Modelling
+   - Spatial Relationships
+- Concentration on just a few topics
+
+:::
+::: {.col data-latex="{0.4\textwidth}"}
+
+![](C:/Users/andyk/Documents/Projects/SSCI601/Arcaya2016/table2.png)
+:::
+::::::
+
+## Central Themes
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.6\textwidth}"}
+
+- Cross-Sectional studies are abundant
+  - Other designs are much needed to address confounding
+- Census Geographies abound
+  - Are study hypotheses truly *a-priori*
+  - Convenience sampling
+- GIS-related topics are often overlooked, as other commonplace statistics
+   - MAUP
+   - 3+ Level Modelling
+   - Spatial Relationships
+- Concentration on just a few topics
+
+:::
+::: {.col data-latex="{0.4\textwidth}"}
+
+![](C:/Users/andyk/Documents/Projects/SSCI601/Arcaya2016/table3.png)
+:::
+::::::
+
+## Central Themes
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.6\textwidth}"}
+
+- Cross-Sectional studies are abundant
+  - Other designs are much needed to address confounding
+- Census Geographies abound
+  - Are study hypotheses truly *a-priori*
+  - Convenience sampling
+- GIS-related topics are often overlooked, as other commonplace statistics
+   - MAUP
+   - 3+ Level Modelling
+   - Spatial Relationships
+- Concentration on just a few topics  
+
+:::
+::: {.col data-latex="{0.4\textwidth}"}
+
+![](C:/Users/andyk/Documents/Projects/SSCI601/Arcaya2016/table4.png)
+:::
+::::::
+
+
+# Interdisciplinary Connections \& Evaluation
+## Interdisciplinary Connections \& Evaluation
+
+**Interdisciplinary Connections**
+
+- Incorporating Neighborhood elements connects people to space
+  - GIS elements, Demography, Public Health Epidemiology
+
+**Evaluation**
+
+ - Limited to multi-level modelling
+ - A good review of the current state of the literature
+  - Identifies common themes, areas for future progress
+
+# Questions
+## Questions
+
+- What are your thoughts on the Cross-Sectional Observational study of neighborhood effects? Is it completely overplayed at this point?
+- What are some other approaches to compliment/contrast/improve multi-level modelling with neighborhood effects?
+- Is this field of work getting more technical and deductive?
